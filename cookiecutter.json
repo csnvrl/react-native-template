@@ -1,0 +1,8 @@
+{
+            "directory_name": "Hello",
+            "file_name": "Howdy",
+            "greeting_recipient": "Julie",
+            "_copy_without_render": [
+                        "*.tsx"
+            ]
+}

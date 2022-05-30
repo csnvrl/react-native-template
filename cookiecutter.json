@@ -1,8 +1,14 @@
 {
-            "directory_name": "Hello",
-            "file_name": "Howdy",
-            "greeting_recipient": "Julie",
+            "project_name": "ProjectName",
+            "company_name": "Elements",
+            "package_name": "com.{{cookiecutter.company_name | replace(' ', '-') | lower}}.{{cookiecutter.project_name | replace(' ', '-') | lower}}",
+            "package_path": "{{cookiecutter.package_name | replace('.', '/')}}",
+            "project_name_lower": "{{cookiecutter.project_name | lower}}",
             "_copy_without_render": [
-                        "*.tsx"
+                        "*.tsx",
+                        "android/gradlew",
+                        "android/gradlew.bat",
+                        "android/gradle/wrapper/gradle-wrapper.jar",
+                        "*node_modules"
             ]
 }
